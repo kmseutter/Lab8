@@ -25,7 +25,7 @@ public class CustomListTest {
         assertEquals(beforeAdd, list.getCount(), "Count should be 0");
 
         City newCity = new City("Estevan", "SK");
-        list.add(newCity);
+        list.addCity(newCity);
         int afterAdd = beforeAdd+1;
         assertEquals(list.getCount(), afterAdd, "City wasn't added");
     }
