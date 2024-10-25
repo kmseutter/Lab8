@@ -47,4 +47,14 @@ public class CustomListTest {
         list.deleteCity(newCity);
         assertEquals(list.getCount(), 0, "City wasn't deleted");
     }
+
+    @Test
+    public void countCities(){
+        CustomList list = MockCityList();
+        City newCity1 = new City("Estevan", "SK");
+        City newCity2 = new City("Edmonton", "AB");
+        list.addCity(newCity1);
+        list.addCity(newCity2);
+        assertEquals(list.countCities(), 2, "City count is wrong");
+    }
 }
